@@ -28,3 +28,31 @@ https://github.com/Xeloan/A-discord-bot-based-on-Open-Ai
 ![Screenshot_2023-03-06_203442](https://user-images.githubusercontent.com/105624127/224680759-a769efda-0c9f-4a86-abe1-f8530a3f986b.png)
 ![Screenshot_2023-03-06_203520](https://user-images.githubusercontent.com/105624127/224680790-366a351f-9be6-4602-9bd2-f1c315aac3c7.png)
 ![Screenshot_2023-03-06_203637](https://user-images.githubusercontent.com/105624127/224680823-b2472855-879c-4360-beef-690e1adfc6f5.png)
+
+
+# Set up
+After downloading and decompressing the Xia Client in the releases and installing nodejs on your computer
+First build a bot on discord:  (I just partly copy that written by Kav-K)
+- Create a new Bot on Discord Developer Portal: https://discord.com/developers/applications
+    - Applications -> New Application
+- Generate Token of the bot
+    - Select App (Bot) -> Bot -> Reset Token
+- Toogle PRESENCE INTENT:
+    - Select App (Bot) -> Bot -> PRESENCE INTENT, SERVER MEMBERS INTENT, MESSAGES INTENT, (basically turn on all intents)
+- Add Bot the the server.
+    - Select App (Bot) -> OAuth2 -> URL Generator -> Select Scope: Bot
+    - Bot Permissions will appear, select the administrator permissions
+    - Copy the link generated below and paste it on the browser
+    - On add to server select the desired server to add the bot
+Next get the ID of the channel you've added the bot in: you can just open the channel and check the link (like https://discord.com/channels/974519864045756446/1047566067888820274 the 1047566067888820274 is the channel ID)
+Then generate an Open AI Api key: https://beta.openai.com/account/api-keys and get your organization ID in https://platform.openai.com/account/org-settings
+Finally paste the token of the bot, Open AI Api, organization ID and the channel ID into the .env in the file you've downloaded.
+Open the Xia Client.exe(not the xxx.js), you will see login in the log and the bot send "Channel granted" in your channel(remember just one channel).
+
+
+# Last thing
+The Xia_Client.exe is just the launcher of the js file and auto restart it when error appears (like 404, 429, etc.)
+
+chatcontent.json stores the current chat prompt. If the bot suddenly stops and is turned on again, the chat prompt will be automatically restored.
+
+memIndex.json stores the memory
