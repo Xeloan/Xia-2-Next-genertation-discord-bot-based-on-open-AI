@@ -7,3 +7,20 @@ https://github.com/Xeloan/A-discord-bot-based-on-Open-Ai
 
 
 # Command list
+/prompt : send the prompt of current chat
+
+/clear: clear the chat prompt
+
+/save: save the memory in the folder memoryBackup
+
+/log: send the log of chat
+
+/test: test whether Open AI API works alright
+
+/restart: restart the bot(force to restart)
+
+/D <Description>: create an image using DALL-E based on the description by hand. (You needn't use this since you can tell her to draw for you directly)
+  
+/cm clear current memory(Carefully use it please)
+
+# Examples
