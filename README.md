@@ -6,6 +6,9 @@ This is an old version of Xia, you can view it in my previous repository, just a
 https://github.com/Xeloan/A-discord-bot-based-on-Open-Ai
 
 
+!!!You can get the premade client in the releases.
+
+
 # Command list
 /prompt : send the prompt of current chat
 
