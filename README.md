@@ -59,3 +59,10 @@ memIndex.json stores the memory
 
 error.json stores just a flag of whether the bot is stopped by an error
   
+The image generated will also be stored in the DALLE_img folder
+  
+The log will also be stored in the logs folder
+  
+
+# Limitions
+The bot still has some limitions. It recognizes you as Xeloan. For drawing without command, you should first ask Xia to draw one by saying something like "Help me draw a picture please". Then you can describe the picture. When you think it's time to start to draw, send something like "start to draw please", "start", etc. Then Xia will draw a picture for you.
