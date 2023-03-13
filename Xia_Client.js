@@ -1,7 +1,6 @@
 require('dotenv').config();
 const { Client, GatewayIntentBits, Discord, TextChannel } = require('discord.js');
 const fs = require('fs');
-const math = require('mathjs');
 const moment = require('moment-timezone');
 const similarity = require( 'compute-cosine-similarity' );
 const natural = require('natural');
