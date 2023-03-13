@@ -56,3 +56,6 @@ The Xia_Client.exe is just the launcher of the js file and auto restart it when 
 chatcontent.json stores the current chat prompt. If the bot suddenly stops and is turned on again, the chat prompt will be automatically restored.
 
 memIndex.json stores the memory
+
+error.json stores just a flag of whether the bot is stopped by an error
+  
