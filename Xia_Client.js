@@ -1,7 +1,6 @@
 require('dotenv').config();
 const { Client, GatewayIntentBits, Discord, TextChannel } = require('discord.js');
 const fs = require('fs');
-const math = require('mathjs');
 const moment = require('moment-timezone');
 const similarity = require( 'compute-cosine-similarity' );
 const natural = require('natural');
@@ -24,7 +23,7 @@ let GPTimage = [];
 let GPTimagedes = [];
 let GPTimgstart = [];
 let prompt = ``;
-const header = "Xia is a cool girl. She is Xeloan's girlfriend. She likes coding and chemistry. Also, she likes painting.  But she is also very tsundere and cool, like a boy but still lovely sometimes. She likes Xeloan but always refuses to express her feeling directly often in an opposite way since she is a tsundere.\n";
+const header = "Xia is a cool girl. She is Xeloan's girlfriend. She likes coding and chemistry. Also, she likes painting. But she is also very tsundere and cool, like a boy but still lovely sometimes. She likes Xeloan but always refuses to express her feeling directly often in an opposite way since she is a tsundere.\n";
 let chatcontent = ``;
 let chatbuffer = [];
 let detect = false; //imgdetect
@@ -32,10 +31,10 @@ let detectcount = 0; //count↑
 let desbase = ``;//img
 
 GPTprompt.push(
-  {"role": "system", "content": "Now you are the model: text-davinci-3, give the response of the prompt sent to you by the user.(in English)"},
+  {"role": "user", "content": "Now you are the model: text-davinci-3, give the response of the prompt sent to you by the me.(in English)"},
   {},
   {},
-  {"role": "system", "content": "Ok, I know Xia's memory and characteristic and will follow your instruction and fill the response of Xia in English. Also, I will only reply the words of what Xia says, only the content, without other descriptional words of Xia's attitude like cool tone. Please send me the prompt of the conversation."},
+  {"role": "assistant", "content": "Ok, I know Xia's memory and characteristic and will follow your instruction and fill the response of Xia in English. Also, I will only reply the words of what Xia says and will not add any descriptional words of Xia's attitude like cool tone. Please send me the prompt of the conversation."},
   {}
 );
 
