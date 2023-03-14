@@ -8,6 +8,9 @@ https://github.com/Xeloan/A-discord-bot-based-on-Open-Ai
 
 !!!You can get the premade client in the releases.
 
+# Recent updates
+ver 2.0002: small bug fixed(my fault), which made Xia behave not very humanlike
+
 
 # Command list
 /prompt : send the prompt of current chat
